@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lopez Tires & Wheels | Cicero, IL</title>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -13,185 +13,140 @@
   <nav id="nav">
     <div class="nav-inner">
       <div class="logo">
-        <span class="logo-main">LOPEZ</span>
-        <span class="logo-sub">TIRES & WHEELS</span>
+        <span class="logo-top">LOPEZ</span>
+        <span class="logo-bot">TIRES & WHEELS</span>
       </div>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="tel:7086564054" class="nav-cta">Call Now</a></li>
+        <li><a href="tel:7086564054" class="nav-cta">(708) 656-4054</a></li>
       </ul>
       <button class="hamburger" id="hamburger">&#9776;</button>
     </div>
     <ul class="mobile-menu" id="mobileMenu">
       <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Gallery</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="tel:7086564054">Call: (708) 656-4054</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg" style="background-image:url('./img-front.jpg')"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-inner">
-      <div class="hero-content">
-        <p class="hero-tag">Cicero's Tire Experts Since Day One</p>
-        <h1>
-          <span class="h1-top">LOPEZ</span>
-          <span class="h1-bottom">TIRES & WHEELS</span>
-        </h1>
-        <p class="hero-sub">New & used tires · Wheel alignment · Tire repair · Rims & wheels. Get back on the road fast.</p>
-        <div class="hero-btns">
-          <a href="tel:7086564054" class="btn-primary">Call: (708) 656-4054</a>
-          <a href="#services" class="btn-outline">Our Services</a>
-        </div>
+  <!-- HERO — MUSTANG COLOR REVEAL -->
+  <section class="hero" id="heroSection">
+    <div class="hero-canvas-wrap" id="canvasWrap">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-hint" id="heroHint">
+        <span class="hint-text">Touch to reveal</span>
+        <div class="hint-arrow">↓</div>
       </div>
-      <div class="hero-hours-card">
-        <p class="hours-title">Hours</p>
-        <div class="hours-list">
-          <div class="hours-row"><span>Mon – Fri</span><span>9AM – 8PM</span></div>
-          <div class="hours-row"><span>Saturday</span><span>9AM – 6PM</span></div>
-          <div class="hours-row closed"><span>Sunday</span><span>Closed</span></div>
+    </div>
+    <div class="hero-info" id="heroInfo">
+      <div class="hero-info-inner">
+        <p class="hero-eyebrow">Cicero, IL · Family Owned</p>
+        <h1>LOPEZ<br/><span>TIRES &<br/>WHEELS</span></h1>
+        <p class="hero-desc">New & used tires · Wheel alignment · Rims · Flat repair. Fast service, honest prices.</p>
+        <div class="hero-actions">
+          <a href="tel:7086564054" class="btn-primary">Call Now</a>
+          <a href="#services" class="btn-ghost">Our Services</a>
         </div>
-        <a href="https://maps.google.com/?q=5432+W+25th+St+Cicero+IL" target="_blank" class="hours-addr">📍 5432 W 25th St, Cicero, IL</a>
+        <div class="hero-hours">
+          <span>Mon–Fri 9AM–8PM</span>
+          <span class="dot">·</span>
+          <span>Sat 9AM–6PM</span>
+          <span class="dot">·</span>
+          <span class="closed-text">Sun Closed</span>
+        </div>
       </div>
     </div>
   </section>
-
-  <!-- TICKER -->
-  <div class="ticker-wrap">
-    <div class="ticker">
-      <span>🔧 Tire Installation</span>
-      <span class="sep">//</span>
-      <span>⚙️ Wheel Alignment</span>
-      <span class="sep">//</span>
-      <span>🔩 Tire Rotation</span>
-      <span class="sep">//</span>
-      <span>🛞 New & Used Tires</span>
-      <span class="sep">//</span>
-      <span>✨ Rims & Wheels</span>
-      <span class="sep">//</span>
-      <span>🔧 Flat Repair</span>
-      <span class="sep">//</span>
-      <span>⚙️ Balancing</span>
-      <span class="sep">//</span>
-      <span>🔧 Tire Installation</span>
-      <span class="sep">//</span>
-      <span>⚙️ Wheel Alignment</span>
-      <span class="sep">//</span>
-      <span>🔩 Tire Rotation</span>
-      <span class="sep">//</span>
-      <span>🛞 New & Used Tires</span>
-      <span class="sep">//</span>
-      <span>✨ Rims & Wheels</span>
-      <span class="sep">//</span>
-      <span>🔧 Flat Repair</span>
-      <span class="sep">//</span>
-      <span>⚙️ Balancing</span>
-      <span class="sep">//</span>
-    </div>
-  </div>
 
   <!-- SERVICES -->
   <section class="services" id="services">
     <div class="section-inner">
-      <div class="section-head">
-        <p class="label">What We Do</p>
-        <h2>SERVICES</h2>
-      </div>
+      <p class="eyebrow">What We Do</p>
+      <h2>SERVICES</h2>
       <div class="services-grid">
-
-        <div class="service-card reveal">
-          <div class="service-icon">🛞</div>
+        <div class="svc reveal">
+          <span class="svc-num">01</span>
           <h3>New & Used Tires</h3>
-          <p>Huge selection of new and used tires for every make and model. We'll find what fits your vehicle and your budget.</p>
+          <p>Huge selection for every make, model, and budget.</p>
         </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon">⚙️</div>
+        <div class="svc reveal">
+          <span class="svc-num">02</span>
           <h3>Wheel Alignment</h3>
-          <p>Professional computerized alignment using John Bean technology. Get your car driving straight and your tires lasting longer.</p>
+          <p>Computerized John Bean alignment system. Precision every time.</p>
         </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon">🔧</div>
-          <h3>Tire Repair & Patches</h3>
-          <p>Flat tire? Nail in the tread? We get you fixed up fast and back on the road. Quick visits welcome.</p>
+        <div class="svc reveal">
+          <span class="svc-num">03</span>
+          <h3>Flat Repair</h3>
+          <p>Nail in your tire? We fix it fast. Walk-ins welcome.</p>
         </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon">✨</div>
+        <div class="svc reveal">
+          <span class="svc-num">04</span>
           <h3>Rims & Wheels</h3>
-          <p>Give your car a makeover with our wide selection of rims and custom wheels at unbeatable prices.</p>
+          <p>Wide selection of custom rims at unbeatable prices.</p>
         </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon">🔩</div>
-          <h3>Tire Rotation & Balancing</h3>
-          <p>Keep your tires wearing evenly and your ride smooth. Fast, affordable, and done right.</p>
+        <div class="svc reveal">
+          <span class="svc-num">05</span>
+          <h3>Rotation & Balancing</h3>
+          <p>Keep your tires wearing evenly and your ride smooth.</p>
         </div>
-
-        <div class="service-card reveal">
-          <div class="service-icon">🔨</div>
-          <h3>General Mechanic Work</h3>
-          <p>On-site mechanic for more than just tires. We keep your vehicle running right.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="gallery" id="gallery">
-    <div class="section-inner">
-      <div class="section-head">
-        <p class="label">Inside the Shop</p>
-        <h2>THE WORK</h2>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-big reveal">
-          <img src="./img-mustang.jpg" alt="Green Mustang in Lopez Tires shop" />
-          <div class="gallery-label">Every car gets the same care</div>
-        </div>
-        <div class="gallery-sm reveal">
-          <img src="./img-tirechange.jpg" alt="Mechanic changing tire" />
-          <div class="gallery-label">Expert hands on every job</div>
-        </div>
-        <div class="gallery-sm reveal">
-          <img src="./img-civic.jpg" alt="Blue Honda Civic in shop bay" />
-          <div class="gallery-label">Full service bays — indoor shop</div>
-        </div>
-        <div class="gallery-wide reveal">
-          <img src="./img-alignment.jpg" alt="John Bean computerized alignment machine" />
-          <div class="gallery-label">Computerized John Bean alignment system</div>
+        <div class="svc reveal">
+          <span class="svc-num">06</span>
+          <h3>General Mechanic</h3>
+          <p>On-site mechanic for more than just tires.</p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- PHOTO STRIP -->
+  <div class="photo-strip">
+    <div class="strip-img"><img src="./img-tirechange.jpg" alt="Mechanic changing tire" /></div>
+    <div class="strip-img"><img src="./img-civic.jpg" alt="Car in shop bay" /></div>
+    <div class="strip-img"><img src="./img-front.jpg" alt="Lopez Tires storefront" /></div>
+  </div>
 
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="section-inner about-inner">
-      <div class="about-img reveal">
-        <img src="./img-front.jpg" alt="Lopez Tires and Wheels storefront Cicero IL" />
-      </div>
-      <div class="about-text">
-        <p class="label">About Us</p>
+      <div class="about-left reveal">
+        <p class="eyebrow">About Us</p>
         <h2>CICERO'S<br/>TIRE SHOP.</h2>
-        <p>Lopez Tires & Wheels has been serving the Cicero community with fast, honest, and affordable tire service. We're a family-owned small business that treats every customer right — whether you need a quick flat fix or a full set of new rims.</p>
-        <p>Our indoor shop is clean, organized, and equipped with professional-grade alignment technology. English and Spanish spoken. We accept credit cards, debit, and NFC mobile payments.</p>
-        <div class="about-perks">
-          <div class="perk">✅ Family Owned</div>
-          <div class="perk">✅ Bilingual Staff (EN/ES)</div>
-          <div class="perk">✅ Indoor Shop</div>
-          <div class="perk">✅ Computerized Alignment</div>
-          <div class="perk">✅ Credit & Debit Accepted</div>
-          <div class="perk">✅ Wheelchair Accessible</div>
+        <p>Lopez Tires & Wheels is a family-owned shop serving Cicero, IL with fast, honest, and affordable tire service. Our indoor shop is equipped with professional-grade technology and staffed by people who know their craft.</p>
+        <p>English and Spanish spoken. We accept credit cards, debit, and NFC mobile payments.</p>
+      </div>
+      <div class="about-right reveal">
+        <div class="perk-list">
+          <div class="perk">
+            <span class="perk-icon">✓</span>
+            <span>Family Owned & Operated</span>
+          </div>
+          <div class="perk">
+            <span class="perk-icon">✓</span>
+            <span>Bilingual Staff (EN/ES)</span>
+          </div>
+          <div class="perk">
+            <span class="perk-icon">✓</span>
+            <span>Indoor Shop</span>
+          </div>
+          <div class="perk">
+            <span class="perk-icon">✓</span>
+            <span>Computerized Alignment</span>
+          </div>
+          <div class="perk">
+            <span class="perk-icon">✓</span>
+            <span>Credit, Debit & NFC Pay</span>
+          </div>
+          <div class="perk">
+            <span class="perk-icon">✓</span>
+            <span>Wheelchair Accessible</span>
+          </div>
+          <div class="perk">
+            <span class="perk-icon">✓</span>
+            <span>Quick Visits Welcome</span>
+          </div>
         </div>
       </div>
     </div>
@@ -200,35 +155,37 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="section-inner contact-inner">
-      <div class="contact-info reveal">
-        <p class="label">Get In Touch</p>
-        <h2>COME SEE US</h2>
-        <div class="info-row">
-          <span class="info-label">📍 Address</span>
-          <span>5432 W 25th St, Cicero, IL 60804</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">📞 Phone</span>
-          <a href="tel:7086564054">(708) 656-4054</a>
-        </div>
-        <div class="info-row">
-          <span class="info-label">🕐 Hours</span>
-          <div>
-            <div class="hours-row2">Mon – Fri &nbsp;&nbsp; 9:00 AM – 8:00 PM</div>
-            <div class="hours-row2">Saturday &nbsp;&nbsp; 9:00 AM – 6:00 PM</div>
-            <div class="hours-row2 closed2">Sunday &nbsp;&nbsp;&nbsp;&nbsp; Closed</div>
+      <div class="reveal">
+        <p class="eyebrow">Find Us</p>
+        <h2>COME IN.</h2>
+        <div class="contact-details">
+          <div class="detail">
+            <span class="detail-label">Address</span>
+            <span>5432 W 25th St, Cicero, IL 60804</span>
+          </div>
+          <div class="detail">
+            <span class="detail-label">Phone</span>
+            <a href="tel:7086564054">(708) 656-4054</a>
+          </div>
+          <div class="detail">
+            <span class="detail-label">Hours</span>
+            <div>
+              <div>Mon – Fri &nbsp; 9:00 AM – 8:00 PM</div>
+              <div>Saturday &nbsp;&nbsp; 9:00 AM – 6:00 PM</div>
+              <div style="color:#555;">Sunday &nbsp;&nbsp;&nbsp;&nbsp; Closed</div>
+            </div>
           </div>
         </div>
         <div class="contact-btns">
           <a href="tel:7086564054" class="btn-primary">Call Now</a>
-          <a href="https://maps.google.com/?q=5432+W+25th+St+Cicero+IL" target="_blank" class="btn-outline">Get Directions</a>
+          <a href="https://maps.google.com/?q=5432+W+25th+St+Cicero+IL" target="_blank" class="btn-ghost">Get Directions</a>
         </div>
       </div>
       <div class="map-wrap reveal">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.0!2d-87.7557!3d41.8496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s5432+W+25th+St%2C+Cicero%2C+IL+60804!5e0!3m2!1sen!2sus!4v1"
-          width="100%" height="380"
-          style="border:0;border-radius:10px;"
+          width="100%" height="360"
+          style="border:0;border-radius:8px;"
           allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="Lopez Tires location">
@@ -240,12 +197,12 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <div class="footer-logo">
-        <span class="logo-main">LOPEZ</span>
-        <span class="logo-sub">TIRES & WHEELS</span>
+      <div class="logo">
+        <span class="logo-top">LOPEZ</span>
+        <span class="logo-bot">TIRES & WHEELS</span>
       </div>
-      <p>5432 W 25th St, Cicero, IL 60804 &nbsp;·&nbsp; (708) 656-4054</p>
-      <p class="footer-copy">© 2025 Lopez Tires & Wheels · All Rights Reserved</p>
+      <p>5432 W 25th St, Cicero, IL 60804 · (708) 656-4054</p>
+      <p class="fcopy">© 2025 Lopez Tires & Wheels · All Rights Reserved</p>
     </div>
   </footer>
 
