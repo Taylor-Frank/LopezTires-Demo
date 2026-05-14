@@ -32,31 +32,61 @@
     </ul>
   </nav>
 
-  <!-- HERO — MUSTANG COLOR REVEAL -->
-  <section class="hero" id="heroSection">
-    <div class="hero-canvas-wrap" id="canvasWrap">
-      <canvas id="heroCanvas"></canvas>
+  <!-- HERO — SPOTLIGHT -->
+  <section class="hero" id="hero">
+    <div class="hero-img-wrap" id="heroWrap">
+      <img src="./img-mustang.jpg" alt="Green Mustang in Lopez Tires shop" class="hero-img" id="heroImg" />
+      <div class="hero-dark" id="heroDark"></div>
+      <div class="spotlight" id="spotlight"></div>
+
+      <!-- HOTSPOTS -->
+      <div class="hotspot" id="hs1" style="left:18%;top:72%;">
+        <div class="hs-dot"></div>
+        <div class="hs-card hs-card-right">
+          <p class="hs-title">WHEEL SERVICE</p>
+          <p class="hs-desc">New & used tires, rims, balancing & rotation</p>
+        </div>
+      </div>
+
+      <div class="hotspot" id="hs2" style="left:70%;top:72%;">
+        <div class="hs-dot"></div>
+        <div class="hs-card hs-card-left">
+          <p class="hs-title">TIRE INSTALLATION</p>
+          <p class="hs-desc">Fast professional mounting on any vehicle</p>
+        </div>
+      </div>
+
+      <div class="hotspot" id="hs3" style="left:44%;top:30%;">
+        <div class="hs-dot"></div>
+        <div class="hs-card hs-card-right">
+          <p class="hs-title">WHEEL ALIGNMENT</p>
+          <p class="hs-desc">Computerized John Bean precision alignment</p>
+        </div>
+      </div>
+
+      <!-- HERO TEXT -->
+      <div class="hero-text">
+        <p class="hero-eyebrow">Cicero, IL · Family Owned</p>
+        <h1>LOPEZ<br/><em>TIRES &<br/>WHEELS</em></h1>
+        <a href="tel:7086564054" class="btn-primary">(708) 656-4054</a>
+      </div>
+
+      <!-- HINT -->
       <div class="hero-hint" id="heroHint">
-        <span class="hint-text">Touch to reveal</span>
-        <div class="hint-arrow">↓</div>
+        <span>Move mouse to explore</span>
       </div>
     </div>
-    <div class="hero-info" id="heroInfo">
-      <div class="hero-info-inner">
-        <p class="hero-eyebrow">Cicero, IL · Family Owned</p>
-        <h1>LOPEZ<br/><span>TIRES &<br/>WHEELS</span></h1>
-        <p class="hero-desc">New & used tires · Wheel alignment · Rims · Flat repair. Fast service, honest prices.</p>
-        <div class="hero-actions">
-          <a href="tel:7086564054" class="btn-primary">Call Now</a>
-          <a href="#services" class="btn-ghost">Our Services</a>
-        </div>
-        <div class="hero-hours">
-          <span>Mon–Fri 9AM–8PM</span>
-          <span class="dot">·</span>
-          <span>Sat 9AM–6PM</span>
-          <span class="dot">·</span>
-          <span class="closed-text">Sun Closed</span>
-        </div>
+
+    <!-- HOURS BAR -->
+    <div class="hours-bar">
+      <div class="hours-inner">
+        <div class="hour-item"><span class="hd">Mon – Fri</span><span class="ht">9AM – 8PM</span></div>
+        <div class="hdiv"></div>
+        <div class="hour-item"><span class="hd">Saturday</span><span class="ht">9AM – 6PM</span></div>
+        <div class="hdiv"></div>
+        <div class="hour-item closed"><span class="hd">Sunday</span><span class="ht">Closed</span></div>
+        <div class="hdiv"></div>
+        <div class="hour-item"><span class="hd">Address</span><span class="ht">5432 W 25th St, Cicero</span></div>
       </div>
     </div>
   </section>
@@ -75,7 +105,7 @@
         <div class="svc reveal">
           <span class="svc-num">02</span>
           <h3>Wheel Alignment</h3>
-          <p>Computerized John Bean alignment system. Precision every time.</p>
+          <p>Computerized John Bean alignment. Precision every time.</p>
         </div>
         <div class="svc reveal">
           <span class="svc-num">03</span>
@@ -119,34 +149,13 @@
       </div>
       <div class="about-right reveal">
         <div class="perk-list">
-          <div class="perk">
-            <span class="perk-icon">✓</span>
-            <span>Family Owned & Operated</span>
-          </div>
-          <div class="perk">
-            <span class="perk-icon">✓</span>
-            <span>Bilingual Staff (EN/ES)</span>
-          </div>
-          <div class="perk">
-            <span class="perk-icon">✓</span>
-            <span>Indoor Shop</span>
-          </div>
-          <div class="perk">
-            <span class="perk-icon">✓</span>
-            <span>Computerized Alignment</span>
-          </div>
-          <div class="perk">
-            <span class="perk-icon">✓</span>
-            <span>Credit, Debit & NFC Pay</span>
-          </div>
-          <div class="perk">
-            <span class="perk-icon">✓</span>
-            <span>Wheelchair Accessible</span>
-          </div>
-          <div class="perk">
-            <span class="perk-icon">✓</span>
-            <span>Quick Visits Welcome</span>
-          </div>
+          <div class="perk"><span class="perk-icon">✓</span><span>Family Owned & Operated</span></div>
+          <div class="perk"><span class="perk-icon">✓</span><span>Bilingual Staff (EN/ES)</span></div>
+          <div class="perk"><span class="perk-icon">✓</span><span>Indoor Shop</span></div>
+          <div class="perk"><span class="perk-icon">✓</span><span>Computerized Alignment</span></div>
+          <div class="perk"><span class="perk-icon">✓</span><span>Credit, Debit & NFC Pay</span></div>
+          <div class="perk"><span class="perk-icon">✓</span><span>Wheelchair Accessible</span></div>
+          <div class="perk"><span class="perk-icon">✓</span><span>Quick Visits Welcome</span></div>
         </div>
       </div>
     </div>
@@ -172,7 +181,7 @@
             <div>
               <div>Mon – Fri &nbsp; 9:00 AM – 8:00 PM</div>
               <div>Saturday &nbsp;&nbsp; 9:00 AM – 6:00 PM</div>
-              <div style="color:#555;">Sunday &nbsp;&nbsp;&nbsp;&nbsp; Closed</div>
+              <div style="color:#444;">Sunday &nbsp;&nbsp;&nbsp;&nbsp; Closed</div>
             </div>
           </div>
         </div>
@@ -197,7 +206,7 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <div class="logo">
+      <div class="logo" style="align-items:center; margin-bottom:1rem;">
         <span class="logo-top">LOPEZ</span>
         <span class="logo-bot">TIRES & WHEELS</span>
       </div>
